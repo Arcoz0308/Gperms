@@ -12,3 +12,10 @@ func StringSliceToIntSlice(s []string) []int {
 	}
 	return i
 }
+func IntSliceToStringSlice(i []int) []string {
+	var s []string
+	for _, v := range i {
+		s = append(s, strconv.Itoa(v))
+	}
+	return s
+}
